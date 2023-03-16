@@ -19,6 +19,9 @@ const setupInput = function (conn) {
       else if (key === 'd') {
         connection.write('Move: right');
       }
+      else if (key === 'r') {
+        connection.write('Say: Where we droppin boys');
+      }
       if (key === '\u0003') {
         process.exit();
       }
