@@ -8,15 +8,7 @@ const connect = function () {
   conn.setEncoding("utf8");
   conn.on('connect', () => {
     console.log('connected to game server');
-    conn.write('Name: JN')
-    // setInterval(() => {
-    //     conn.write('Move: up')
-    // },50)
-   
-    // setTimeout(() => {
-    //     conn.write('Move: left')
-    // },5000)
-  
+    conn.write('Name: Jet')
   })
   return conn;
 
@@ -27,5 +19,5 @@ console.log("Connecting ...");
 connect();
 
 module.exports = {
-    connect
+    connect,
 };
